@@ -1,4 +1,5 @@
 actions
 actionIncrement
 
-	^ self counter increment
+	self counter increment.
+	self changed: #counterValueString.
